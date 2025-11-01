@@ -65,9 +65,9 @@ def error_prt(config, mc2, nc2):
 
     return error_p
 
-def gas_generator(config, nc2):
+def gas_generator(config, nc2, mc2_bounds = [50,100]):
     
-    result = minimize_scalar(lambda mc2: error_prt(config, mc2, nc2),bounds = [50,100], tol=0.001)
+    result = minimize_scalar(lambda mc2: error_prt(config, mc2, nc2),bounds = mc2_bounds, tol=0.0001)
 
     if result.success:
         best_mc2 = result.x

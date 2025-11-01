@@ -4,6 +4,7 @@ constants:
   mach_inlet: 0.5
   R: 0.2871
   f: 0.025
+  mc2_bounds: [50,100]
 
 diffuser:
   pr_dd: 1
