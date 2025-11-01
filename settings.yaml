@@ -1,0 +1,48 @@
+combustor:
+  b1: 9.068
+  b2: 0
+  delta_h: 41800
+  eff_burner_dp: 0.91
+  gamma_b: 1.341
+compressor:
+  c1: 0.1764
+  c2: 0.00907
+  c3: 0.8
+  c4: 1.0e-05
+  c5: 9.724
+  eff_c_dp: 0.88
+  gamma_comp: 1.384
+  nc2d: 10000
+  u: 0.1
+constants:
+  Pamb: 101.325
+  R: 0.2871
+  Tamb: 289
+  f: 0.025
+  mach_inlet: 0.5
+diffuser:
+  d: 0
+  gamma_diff: 1.401
+  pr_dd: 1
+nozzle:
+  a1: 0
+  eff_n_d: 0.98
+  m_n: 88.08
+output:
+  res_fldr: ./
+shaft:
+  s1: 0
+  s2: 0
+thermodynamics:
+  cp1: ((gamma_m1 * R) / (gamma_m1 - 1))
+  cp2: ((gamma_m2 * R) / (gamma_m2 - 1))
+  gamma5: 1.328
+  gamma_m1: 1.384
+  gamma_m2: 1.328
+turbine:
+  eff_t_d: 0.9
+  k1: 1
+  k2: 0.2
+  mc4c: 15.87
+  nc4d: 4000
+  pr_tc: 0.28
